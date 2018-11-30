@@ -37,6 +37,7 @@ const RocketType = new GraphQLObjectType({
 const LinkType = new GraphQLObjectType({
   name: 'Link',
   fields: () => ({
+    mission_patch: { type: GraphQLString },
     mission_patch_small: { type: GraphQLString },
     video_link: { type: GraphQLString },
     flickr_images: { type: new GraphQLList(GraphQLString) }
